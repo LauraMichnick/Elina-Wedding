@@ -2,19 +2,19 @@
 
 .birthstone-bounce-regular {
   font-family: "Birthstone Bounce", cursive;
-  font-weight: 400;
+  font-weight: 400vw;
   font-style: normal;
 }
 
 .birthstone-bounce-medium {
   font-family: "Birthstone Bounce", cursive;
-  font-weight: 500;
+  font-weight: 500vw;
   font-style: normal;
 }
 
 .libertinus-mono-regular {
   font-family: "Libertinus Mono", monospace;
-  font-weight: 400;
+  font-weight: 400vw;
   font-style: normal;
 }
 
@@ -73,6 +73,8 @@
   .header {
     font-size: 4em;
     text-align: center;
+    bottom: 50px;
+
   }
   
     /* Main content */
@@ -83,7 +85,7 @@
   /* Images */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(#fcfaed33, #fcfaed33), url("images/walking_shot_sqr.jpeg");
+    background-image: linear-gradient(#fcfaed00, #fcfaed00), url("images/walking_shot_sqr.jpeg");
   
     /* Set a specific height */
     height: 90vh;
@@ -93,7 +95,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    top:50px;
+    margin-bottom: 50px;
   }
+
+  .hero-siegel {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%); /* halb über dem Rand */
+  width: 100px;
+  z-index: 10; /* liegt über dem Bild */
+}
 
   .rsvp-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -148,19 +161,7 @@
     position: relative;
   }
 
-  .wax-seal-image{
-    background-image: url("images/siegel.png");
-
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
-  }
-
-
-  /* Menu */
+   /* Menu */
   .menubtn {
     display: inline-block;
     cursor: pointer;
@@ -209,7 +210,7 @@
     position: fixed;
     display: inline-block;
     left: 1%;
-    top:  1%;
+    top:  .5%;
     z-index: 99;
   }
   
@@ -293,53 +294,71 @@
     font-family: "Bodoni Moda SC", serif;
 }
 
-.column {
-    display: table-cell;
+.footer{
+  display: flex;
+}
+.row {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.lower_column {
+    display: flex;
     float: left;
     width: 50%;
-    top: 50%;
-    padding: 10px;
     text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
-  .quatercolumn {
-    float: left;
-    padding: 2%;
-    width: 25%;
-    margin-top: 20px;
-    text-align: center;
-  }
+.head_column {
+  display: flex;
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.quatercolumn {
+  float: left;
+  padding: 2%;
+  width: 25%;
+  margin-top: 20px;
+  text-align: center;
+}
   /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {
+.small_column {
+    display: flex;
     float: left;
     width: 25%;
-    padding-left: 5%;
-    margin-top: 20px;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   
   /* Right column */
-  .rightcolumn {
+  .big_column {
+    display: flex;
     float: left;
     width: 75%;
-    padding-left: 20px;
-    margin-top: 20px;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
   }
  
   /* Add a card effect for articles */
 .card {
     background-color: #bc924999;
-    padding: 20px;
-    margin-top: 20px;
-
-
+    width: 100%;
+    min-height: 2em;
   }
 .card_transparent {
   background-color: #f1ccc400;
-  padding-left: 15%;
-  padding-right: 15%;
-  margin-top: 20px;
-
+  width: 100%;
 
 }
   
@@ -352,12 +371,27 @@
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 850px) {
-    .column, .leftcolumn, .rightcolumn, .quatercolumn, .button {
-      display: block;
-      width: 100%;
-      padding: 20px;
-      text-align: center;
-    }
+   .row{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .head_column{
+    order: 1;
+    margin-bottom: 5%;
+   }
+   .lower_column{
+    order: 2;
+   }
+   .small_column{
+    order: 1;
+    margin-bottom: 5%;
+    width: 50%;
+   }
+   .big_column{
+    order: 2;
+    width: 50%;
+   }
   }
 
 /* Style the Image Used to Trigger the Modal */
