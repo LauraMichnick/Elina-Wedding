@@ -275,6 +275,15 @@ img {
   padding-bottom: 1%;
 }
 
+.nonresponsive_column{
+  display: flex;
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .lower_column {
   display: flex;
   float: left;
