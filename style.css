@@ -1,4 +1,4 @@
-/* ivory FCFAED black cherry 6C0F16*/
+/* ivory FCFAED black cherry 6C0F16 bridal heath fffaf4*/
 
 .birthstone-bounce-regular {
   font-family: "Birthstone Bounce", cursive;
@@ -30,7 +30,7 @@
   
   body {
     font-family: "Libertinus Mono"; 
-    background-color: #FCFAED;
+    background-color:  #fffaf4;
     text-align: left;
     color: #333333;
   }
@@ -60,6 +60,7 @@
     text-align: justify;
     font-weight: 500;
     font-size: x-large;
+    font-weight: bold;
     color: #333333;
   }
   p{
@@ -69,6 +70,12 @@
     font-size: large;
     color: #333333;
   }
+
+  p, a, h1, h2, h3 {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
   
   /* header/page title */
 
@@ -87,7 +94,7 @@
   /* Images */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(#fcfaed00, #fcfaed00), url("images/walking_shot_sqr.jpeg");
+    background-image: linear-gradient(#fffaf400, #fffaf400), url("images/walking_shot_sqr.jpeg");
   
     /* Set a specific height */
     height: 90vh;
@@ -113,6 +120,8 @@
 img {
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
+  
 }
   /* Place text on the image */
   .hero-text {
@@ -122,7 +131,7 @@ img {
     left: 30%;
     transform: translate(-50%, -50%);
     text-shadow: -2px 10px 4px #333333;
-    color: #FCFAED;
+    color: #fffaf4;
 
   }
   .hero-titel{
@@ -143,7 +152,7 @@ img {
     border: none;
     padding: 2.5px 7.5px;
     border-radius: 3px;
-    background-color: #fcfaed69;
+    background-color: #fffaf469;
     z-index: 99;
   }
  
@@ -158,7 +167,7 @@ img {
     .scrolled .bar1,
     .scrolled .bar2,
     .scrolled .bar3 {
-    background-color: #fcfaed69;
+    background-color: #fffaf469;
     }
     .light .bar1,
     .light .bar2,
@@ -178,7 +187,7 @@ img {
 
  
   .menubtn:hover, .menubtn:focus {
-    background-color: #fcfaed69;
+    background-color: #fffaf469;
   }
   
   .toggle-menu {
@@ -207,6 +216,7 @@ img {
     text-decoration: none;
     display: block;
     z-index: 99;
+    text-align: center;
   }
 
   .menu-content a.active {
@@ -221,8 +231,9 @@ img {
   .show {display: block;}
 
 .google-form {
-    text-align: center;
+    position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
 .google-maps{
@@ -243,25 +254,26 @@ img {
 }
 
 .button{
-    background-color: #bc924999;
-    border: none;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    width: 80%;
-    cursor: pointer;
+  position: relative;
+  background-color: #bc924900;
+  border: 1.5px solid #333333;
+  box-shadow: 0 0 8px #333333;
+  border-radius: 5px;
+  width: 75%;
+  cursor: pointer;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 0 auto;
 }
 .button:hover{
   background-color: #bc9249;
 }
 .button-content a{
-    color: black;
-    opacity: 100%;
-    background-color: #f1ccc400;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: "Bodoni Moda SC", serif;
+  color: #333333;
+  opacity: 100%;
+  background-color: #f1ccc400;
+  text-decoration: none;
+  display: block;
 }
 
 .footer{
@@ -290,7 +302,8 @@ img {
   width: 50%;
   text-align: center;
   margin-left: 2%;
-  margin-right: 2%;
+  margin-right: 2%; 
+  align-items: center;
 }
 
 .head_column {
@@ -304,23 +317,24 @@ img {
 
 .small_column {
     display: flex;
-    float: left;
     width: 25%;
     text-align: center;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    align-items: center;  
   }
 
   .big_column {
     display: flex;
-    float: left;
     width: 75%;
     text-align: center;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: left;
+    align-items: center;  
   }
  
-  /* Add a card effect for articles */
 .card {
     background-color: #bc924999;
     width: 100%;
@@ -356,13 +370,13 @@ img {
     width: 100%
    }
    .small_column{
-    order: 1;
-    margin-bottom: 5%;
+    order: 2;
     width: 100%;
    }
    .big_column{
-    order: 2;
+    order: 1;
     width: 100%;
+    margin-bottom: 5%;
    }
   }
 
@@ -391,8 +405,8 @@ img {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #FCFAED; /* Fallback color */
-  background-color: #FCFAED99;
+  background-color: #fffaf4; /* Fallback color */
+  background-color: #fffaf499;
 }
 
 /* Modal Content (Image) */
