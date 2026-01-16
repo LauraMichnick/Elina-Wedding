@@ -117,6 +117,7 @@
   z-index: 10; /* liegt über dem Bild */
 }
 
+
 img {
   max-width: 100%;
   height: auto;
@@ -265,6 +266,18 @@ img {
   padding-right: 2%;
   margin: 0 auto;
 }
+.hero_button{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%); /* halb über dem Rand */
+  width: 100px;
+  z-index: 11; /* liegt über dem Bild */
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
 .button:hover{
   background-color: #bc9249;
 }
