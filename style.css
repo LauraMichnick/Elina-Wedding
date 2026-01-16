@@ -298,7 +298,6 @@ img {
 
 .lower_column {
   display: flex;
-  float: left;
   width: 50%;
   text-align: center;
   margin-left: 2%;
@@ -308,8 +307,29 @@ img {
 
 .head_column {
   display: flex;
-  float: left;
   width: 50%;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.oneThird_column {
+  display: flex;
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%; 
+  align-items: center;
+  justify-items: center;
+}
+
+.twoThird_column {
+  display: flex;
+  float: left;
+  width: 60%;
   text-align: center;
   margin-left: 2%;
   margin-right: 2%;
@@ -346,7 +366,6 @@ img {
 .card_transparent {
   background-color: #f1ccc400;
   width: 100%;
-
 }
   
   /* Clear floats after the columns */
@@ -368,6 +387,7 @@ img {
     margin-bottom: 5%;
     width: 100%
    }
+
    .lower_column{
     order: 2;
     width: 100%
@@ -380,6 +400,15 @@ img {
     order: 1;
     width: 100%;
     margin-bottom: 5%;
+   }
+
+   .oneThird_column{
+    order: 1;
+    width: 100%;
+   }
+   .twoThird_column{
+    order:2;
+    width: 100%;
    }
   }
 
