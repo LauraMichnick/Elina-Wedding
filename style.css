@@ -313,6 +313,7 @@ img {
   text-align: center;
   margin-left: 2%;
   margin-right: 2%;
+  align-items: center;
 }
 
 .small_column {
@@ -339,6 +340,8 @@ img {
     background-color: #bc924999;
     width: 100%;
     min-height: 2em;
+    display: flex;
+    align-items: center;
   }
 .card_transparent {
   background-color: #f1ccc400;
