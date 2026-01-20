@@ -393,7 +393,7 @@ img {
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 750px) {
    .row{
     flex-direction: column;
     align-items: center;
@@ -426,5 +426,25 @@ img {
    .twoThird_column{
     order:2;
     width: 100%;
+   }
+
+   h1{
+    font-size: 7em;
+   }
+   h2{
+    font-size: 2.5em;
+   }
+   h3{
+    font-size: 1em;
+   }
+   h4{
+    font-size: large;
+   }
+   p{
+    font-size: medium;
+   }
+
+   .hero-image {
+    background-image: url("images/walking_shot.jpeg");
    }
   }
