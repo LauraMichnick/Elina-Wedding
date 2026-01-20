@@ -29,3 +29,15 @@ function toggleMenu(x) {
 const bar1 = document.querySelector(".bar1");
 const bar2 = document.querySelector(".bar2");
 const bar3 = document.querySelector(".bar3");
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g., 'rsvp.html'
+    const menuLinks = document.querySelectorAll("#menu a");
+
+    menuLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+        }
+    });
+});
