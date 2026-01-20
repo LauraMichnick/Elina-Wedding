@@ -445,4 +445,8 @@ img {
    p{
     font-size: medium;
    }
+  .hero-text {
+    top: 66%;
+    left: 50%;
+  }
   }
