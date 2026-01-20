@@ -393,7 +393,7 @@ img {
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 400px) {
    .row{
     flex-direction: column;
     align-items: center;
@@ -436,6 +436,7 @@ img {
    }
    h3{
     font-size: 1em;
+    font-weight: bold;
    }
    h4{
     font-size: large;
