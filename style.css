@@ -98,13 +98,13 @@
   /* Images */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(#fffaf400, #fffaf400), url("images/walking_shot_sqr.jpeg");
+    background-image: linear-gradient(#fffaf400, #fffaf400), url("images/walking_shot.jpeg");
   
     /* Set a specific height */
     height: 90vh;
   
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
+    background-position: 50% 33%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -393,7 +393,7 @@ img {
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
    .row{
     flex-direction: column;
     align-items: center;
@@ -430,6 +430,7 @@ img {
 
    h1{
     font-size: 7em;
+    font-weight: bold;
    }
    h2{
     font-size: 2.5em;
@@ -443,9 +444,5 @@ img {
    }
    p{
     font-size: medium;
-   }
-
-   .hero-image {
-    background-image: url("images/walking_shot.jpeg");
    }
   }
