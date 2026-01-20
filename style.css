@@ -446,6 +446,7 @@ img {
     font-size: medium;
    }
   .hero-text {
+    width: 100%;
     top: 66%;
     left: 50%;
   }
