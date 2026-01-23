@@ -1,20 +1,45 @@
 /* ivory FCFAED black cherry 6C0F16 bridal heath fffaf4*/
 
+@font-face {
+  font-family: "Birthstone Bounce";
+  src: url("fonts/Birthstone_Bounce/BirthstoneBounce-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Birthstone Bounce";
+  src: url("fonts/Birthstone_Bounce/BirthstoneBounce-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Mono";
+  src: url("fonts/Libertinus_Mono/LibertinusMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 .birthstone-bounce-regular {
   font-family: "Birthstone Bounce", cursive;
-  font-weight: 400vw;
+  font-weight: 400;
   font-style: normal;
 }
 
 .birthstone-bounce-medium {
   font-family: "Birthstone Bounce", cursive;
-  font-weight: 500vw;
+  font-weight: 500;
   font-style: normal;
 }
 
 .libertinus-mono-regular {
   font-family: "Libertinus Mono", monospace;
-  font-weight: 400vw;
+  font-weight: 400;
   font-style: normal;
 }
 
