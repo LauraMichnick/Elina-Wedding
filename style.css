@@ -89,8 +89,9 @@
     color: #333333;
   }
   h6{
+    font-family:  "Libertinus Mono";
     text-align: right;
-
+    color: #333333;
   }
   p{
     font-family: "Libertinus Mono";
