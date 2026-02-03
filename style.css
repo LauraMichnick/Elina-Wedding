@@ -398,7 +398,30 @@ img {
     justify-content: left;
     align-items: center;  
   }
- 
+.head_footer_column{
+  display: flex;
+  width: 50%;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  justify-content: right; 
+  align-items:baseline; 
+  padding-top: 1%; 
+  padding-right: 2%; 
+  height:4em;
+}
+
+.lower_footer_column{
+  display: flex;
+  width: 50%;
+  margin-left: 2%;
+  margin-right: 2%; 
+  justify-content: center; 
+  align-items:baseline; 
+  padding-top: 1%; 
+  padding-right: 2%; 
+  height:4em;
+}
 .card {
     background-color: #bc924999;
     width: 100%;
@@ -428,12 +451,12 @@ img {
    .head_column{
     order: 1;
     margin-bottom: 5%;
-    width: 100%
+    width: 100%;
    }
 
    .lower_column{
     order: 2;
-    width: 100%
+    width: 100%;
    }
    .small_column{
     order: 2;
@@ -452,6 +475,23 @@ img {
    .twoThird_column{
     order:2;
     width: 100%;
+   }
+
+   .head_footer_column{
+    order: 1;
+    margin-bottom: 5%;
+    width: 100%;
+    justify-content:center;
+    height: 2em;
+   }
+
+   .lower_footer_column{
+    order: 2;
+    width: 100%;
+    justify-content:center;
+    height: 2em;
+    margin-bottom: 5%;
+
    }
 
    h1{
